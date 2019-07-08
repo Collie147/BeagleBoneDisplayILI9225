@@ -46,7 +46,7 @@ setYRange(samplesToCapture)
 while (True):
 	
 	img = Image.new('L', (176, 220), 255)
-		drawImg = ImageDraw.Draw(img)
+	drawImg = ImageDraw.Draw(img)
 	value = (ADC.read("P9_40"))
 	value = int(round(value * 100))
 	x.append(value)
